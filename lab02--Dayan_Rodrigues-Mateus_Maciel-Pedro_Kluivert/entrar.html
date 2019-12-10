@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/style2.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="assets/js/script.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title></title>
+    </head>
+    <body>
+        <div id="navbar">
+            <i id="icon-user" class="fas fa-user-circle icon"></i>
+            <a style="color: black;" href="#"><i id="icon-bars" class="fas fa-bars"></i></a>
+            <label id="nome-usuario">Bruno Vasconcelos</label>
+        </div>
+        <div id="container">
+            <div id="option">
+                <label id="titletable" for="option">Alunos Registrados</label>
+                <button id="adicionar" onclick="ChangeToDiv('Adicionar')"><i id="icon-add-minus" class="fas fa-plus"></i> Adicionar Aluno</button>
+            </div>
+            <div id="Alunos" class="content" style="display:block">
+                <table id="alunos">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" /></th>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Série</th>
+                            <th>Matrícula</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>Mateus Maciel</td>
+                            <td>16</td>
+                            <td>2º Ano</td>
+                            <td>201810040015</td>
+                            <td><i id="icon-pencil" class="fas fa-edit"></i>
+                                    <i id="icon-trash" class="fas fa-trash"></i></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>Pedro Kluivert</td>
+                            <td>16</td>
+                            <td>2º Ano</td>
+                            <td>201810040032</td>
+                            <td><i id="icon-pencil" class="fas fa-edit"></i>
+                                    <i id="icon-trash" class="fas fa-trash"></i></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <div id="Sobre" class="content" style="display:none">Sobre</div>
+                <div id="Adicionar" class="content" style="display:none">
+                    <form name="my_form">
+                            <h1>Formulário</h1>
+                            <p class="nome">
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nomeid" required="required" name="nome"/>
+                            </p>
+        
+                            <p>
+                                <label for="idade">Idade:</label>
+                                <input type="number" id="emailid" name="email"/>
+                            </p>
+                        
+                            <P>
+                                <label for="Matricula">Matrícula:</label>
+                                <input type="number"id="emailid">
+                            </P>
+        
+                            <p>
+                                <label for="Série">Série:</label>
+                                <input type="number" id="emailid">
+                            </p>
+        
+                            <p class="submit">
+                                <input type="submit" onclick="Enviar();" value="Enviar" />
+                            </p>
+                        </form>
+                </div>
+        </div>
+        <div id="menu">
+                <button class="opcoes" onclick="ChangeToDiv('Alunos')"> INÍCIO </button>
+                <button class="opcoes" onclick="ChangeToDiv('Sobre')"> SOBRE </button>
+                <button class="opcoes" onclick="exit()"> SAIR </button>
+            </div>
+    </body>
+</html>

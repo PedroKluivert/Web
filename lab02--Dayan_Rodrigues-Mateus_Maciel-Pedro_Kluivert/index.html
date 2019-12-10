@@ -1,0 +1,43 @@
+<!-- FOCO, FORÇA E FÉ
+      NÃO DESISTA
+     VOCÊ CONSEGUE -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>lab02 - Web I</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/script.js"></script>
+    </head>
+    <body>
+        <div id="container">
+                <form>
+                    <img id="logo" src="images/IFPB.jpg" alt="">
+    
+                    <!-- Login do Usuário -->
+                    <label for="login">Login</label>
+                    <input id="login" type="text" class="form-input"/>
+    
+                    <!-- Senha do Usuário -->
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" class="form-input"/>
+    
+                    <!-- Escolha do Curso -->
+                    <select name="curso" class="form-input">
+                        <option>Técnico em Informática</option>
+                        <option>Engenharia da Computação</option>
+                        <option>Ciências da Computação</option>
+                        <option>Telemática</option>
+                        <option>Designer</option>
+                    </select>
+                </form>
+
+                <!-- Botão de submissão -->
+                <button onclick="login(document.getElementById('login').value,
+                document.getElementById('password').value)">Enviar</button>
+                <footer style="text-align: center; color: gray;">
+                Portal do Estudante | Desenvolvimento: IFPB
+                </footer>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!-- Aluno: Pedro Kluivert
+     Turma: 2º Informática -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Usuários</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <form>
+                <img id="logo" src="images/IFPB.jpg" alt="">
+
+                <!-- Login do Usuário -->
+                <label for="login">Login</label>
+                <input id="login" type="text" class="form-input"/>
+
+                <!-- Senha do Usuário -->
+                <label for="password">Senha</label>
+                <input type="password" id="password" class="form-input"/>
+
+                <!-- Escolha do Curso -->
+                <select name="curso" class="form-input">
+                    <option>Técnico em Informática</option>
+                    <option>Engenharia da Computação</option>
+                    <option>Ciências da Computação</option>
+                    <option>Telemática</option>
+                    <option>Designer</option>
+                </select>
+
+                <!-- Botão de submissão -->
+                <button class="btn-primary" type="submit">Enviar</button>
+            </form>
+            <footer style="text-align: center; color: gray;">
+            Portal do Estudante | Desenvolvimento: IFPB
+            </footer>
+        </div>
+    </body>
+</html>
